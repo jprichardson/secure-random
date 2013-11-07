@@ -2,7 +2,7 @@
   "name": "secure-rand",
   "version": "0.0.0",
   "description": "Normalize the creation of cryptographically strong random values.",
-  "repo": "jprichardson/secure-random",
+  "repo": "jprichardson/secure-rand",
   "keywords": [
     "crypto",
     "cryptography",

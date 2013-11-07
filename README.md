@@ -1,7 +1,7 @@
 secure-random
 ==============
 
-A simple JavaScript to normalize the creation of cryptographically strong random values
+A simple JavaScript component to normalize the creation of cryptographically strong random values.
 
 
 Why?
