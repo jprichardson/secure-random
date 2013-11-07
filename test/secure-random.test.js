@@ -1,6 +1,7 @@
-var secureRandom = require('../lib/secure-random')
-
-require('terst')
+if (typeof module != 'undefined' && module.exports) {
+  var secureRandom = require('../lib/secure-random')
+  require('terst')
+}
 
 describe('+ secureRandom(count)', function() {
   describe('> when no options are passed', function() {

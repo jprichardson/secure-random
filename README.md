@@ -45,8 +45,12 @@ Usage
 ### Example
 
 
-
-
+References
+----------
+* [Node.js crypto.randomBytes()](http://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback)
+* [Node.js Buffer](http://nodejs.org/api/buffer.html)
+* [window.crypto.getRandomValues()](https://developer.mozilla.org/en-US/docs/Web/API/window.crypto.getRandomValues)
+* [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 
 License
 -------

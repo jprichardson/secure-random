@@ -23,7 +23,8 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "*",
-    "testutil": "~0.6.0"
+    "testutil": "~0.6.0",
+    "terst": "0.0.1"
   },
   "dependencies": {}
 }
