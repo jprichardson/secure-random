@@ -39,10 +39,18 @@ Install
 Usage
 -----
 
-### 
+### secureRandom(count, options)
 
+**count**: is the number of elements to return. 
+**options**: options to pass. Only valid value is `array`.
 
-### Example
+Returns a `Uint8Array` or `Array` if `options.array` is set.
+
+```js
+var bytes = secureRandom(10)
+console.log(bytes.length) //10
+```
+
 
 
 References
