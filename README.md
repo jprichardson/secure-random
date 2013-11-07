@@ -16,30 +16,30 @@ Install
 
 ### Node.js/Browserify
 
-    npm install --save secure-rand
+    npm install --save secure-random
 
 
 ### Component
 
-    component install jprichardson/secure-rand
+    component install jprichardson/secure-random
 
 
 ### Bower
 
-    bower install secure-rand
+    bower install secure-random
 
 
 ### Script
 
 ```html
-<script src="/path/to/secure-rand.js"></script>
+<script src="/path/to/secure-random.js"></script>
 ```
 
 
 Usage
 -----
 
-### rr(array, [lastIndex])
+### 
 
 
 ### Example
