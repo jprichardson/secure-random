@@ -1,8 +1,8 @@
 {
-  "name": "secure-rand",
-  "version": "0.0.0",
+  "name": "secure-random",
+  "version": "0.0.1",
   "description": "Normalize the creation of cryptographically strong random values.",
-  "main": "./lib/secure-rand.js",
+  "main": "./lib/secure-random.js",
   "scripts": {
     "test": "mocha"
   },
@@ -23,7 +23,6 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "*",
-    "testutil": "~0.6.0",
     "terst": "0.0.1"
   },
   "dependencies": {}

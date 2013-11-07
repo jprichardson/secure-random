@@ -1,6 +1,6 @@
 {
-  "name": "secure-rand",
-  "version": "0.0.0",
+  "name": "secure-random",
+  "version": "0.0.1",
   "description": "Normalize the creation of cryptographically strong random values.",
   "repo": "jprichardson/secure-random",
   "keywords": [
@@ -13,7 +13,7 @@
     "number"
   ],
   "scripts": [
-    "./lib/secure-rand.js"
+    "./lib/secure-random.js"
   ],
-  "main": "./lib/secure-rand.js"
+  "main": "./lib/secure-random.js"
 }
