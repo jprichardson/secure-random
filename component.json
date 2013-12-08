@@ -1,6 +1,6 @@
 {
   "name": "secure-random",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Normalize the creation of cryptographically strong random values.",
   "repo": "jprichardson/secure-random",
   "keywords": [
