@@ -1,3 +1,7 @@
+0.2.0 / 2013-12-17
+------------------
+* explicitly force check for `window.crypto`
+
 0.1.0 / 2013-12-08
 ------------------
 * modified code so that Browserify doesn't include the Node.js `crypto` packabe client-side
