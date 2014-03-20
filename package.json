@@ -25,5 +25,8 @@
     "mocha": "*",
     "terst": "0.0.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "browser": {
+    "crypto": false
+  }
 }
