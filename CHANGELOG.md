@@ -1,8 +1,7 @@
 1.0.0 / 2014-06-03
 ------------------
 * added Travis-CI support
-* added Coveralls support
-* 
+* added Testling support
 
 0.2.1 / 2014-03-20
 ------------------
