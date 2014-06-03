@@ -97,6 +97,15 @@ var secureRandom = require('secure-random')
 var data = secureRandom.randomUint8Array(10)
 ```
 
+### randomBuffer(byteLength)
+
+Sugar for `secureRandom(byteLength, {type: 'Buffer'})`.
+
+```js
+var secureRandom = require('secure-random')
+var data = secureRandom.randomBuffer(10)
+```
+
 
 References
 ----------

@@ -19,7 +19,8 @@ var data = secureRandom(10) //returns Array by default
 
 * added `Buffer` type
 * added `randomArray()` method
-
+* added `randomUint8Array()`
+* added `randomBuffer()`
 
 0.2.1 / 2014-03-20
 ------------------

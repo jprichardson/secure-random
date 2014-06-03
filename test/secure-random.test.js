@@ -62,4 +62,12 @@ describe('secure-random', function() {
       EQ (data.length, 10)
     })
   })
+
+  describe('randomBuffer(byteCount)', function() {
+    it('should return a Buffer', function() {
+      var data = secureRandom.randomBuffer(10)
+      T (Buffer.isBuffer(data))
+      EQ (data.length, 10)
+    })
+  })
 })
