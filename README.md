@@ -1,6 +1,8 @@
 secure-random
 ==============
 
+[![build status](https://secure.travis-ci.org/jprichardson/secure-random.png)](http://travis-ci.org/jprichardson/secure-random)
+
 A simple JavaScript component to normalize the creation of cryptographically strong random values.
 
 

@@ -3,9 +3,6 @@
   "version": "0.2.1",
   "description": "Normalize the creation of cryptographically strong random values.",
   "main": "./lib/secure-random.js",
-  "scripts": {
-    "test": "mocha"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jprichardson/secure-random"
@@ -22,11 +19,20 @@
   "author": "JP Richardson",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "*",
-    "terst": "0.0.1"
+    "mocha": "^1.20.0",
+    "terst": "^0.1.0",
+    "coveralls": "^2.10.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "istanbul": "^0.2.10"
   },
   "dependencies": {},
   "browser": {
     "crypto": false
+  },
+  "scripts": {
+    "test": "mocha --ui bdd",
+    "unit": "./node_modules/.bin/mocha",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter list test/*.js",
+    "coveralls": "npm run-script coverage && node ./node_modules/.bin/coveralls < coverage/lcov.info"
   }
 }

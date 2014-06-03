@@ -1,3 +1,9 @@
+1.0.0 / 2014-06-03
+------------------
+* added Travis-CI support
+* added Coveralls support
+* 
+
 0.2.1 / 2014-03-20
 ------------------
 * removed browserify hack, replaced with `package.json` setting. [weilu / #1](https://github.com/jprichardson/secure-random/pull/1)
