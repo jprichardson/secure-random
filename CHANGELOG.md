@@ -3,6 +3,22 @@
 * added Travis-CI support
 * added Testling support
 
+* changed method default return type
+
+old way:
+
+```js
+var data = secureRandom(10) //return Uint8Array by default
+```
+
+new way:
+
+```js
+var data = secureRandom(10) //returns Array by default
+```
+
+
+
 0.2.1 / 2014-03-20
 ------------------
 * removed browserify hack, replaced with `package.json` setting. [weilu / #1](https://github.com/jprichardson/secure-random/pull/1)

@@ -2,21 +2,24 @@ var secureRandom = require('../')
 
 require('terst')
 
-
-describe('+ secureRandom(count)', function() {
-  describe('> when no options are passed', function() {
-    it('should generate a native type array of bytes', function() {
-      var bytes = secureRandom(10)
-      EQ (bytes.length, 10)
-      T (bytes instanceof Uint8Array)
+describe('secure-random', function() {
+  
+  describe('secureRandom(countBytes, options)', function() {
+    describe('> when type is not set', function() {
+      it('should return Array of bytes', function() {
+        var data = secureRandom(10)
+        T (data instanceof Array)
+        EQ (data.length, 10)
+      })
     })
-  })
 
-  describe('> when options.array is set', function() {
-    it('should generate a regular array', function() {
-      var bytes = secureRandom(10, {array: true})
-      EQ (bytes.length, 10)
-      T (bytes instanceof Array)
+
+    describe('> when type is set to Array', function() {
+      it('should return an Array of random bytes', function() {
+        var data = secureRandom(10, {type: 'Array'})
+        T (data instanceof Array)
+        EQ (data.length, 10)
+      })
     })
   })
 })

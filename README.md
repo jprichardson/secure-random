@@ -45,13 +45,15 @@ Usage
 
 ### secureRandom(count, options)
 
-**count**: is the number of elements to return. 
-**options**: options to pass. Only valid value is `array`.
+- **countBytes**: is the number of bytes to return. 
+- **options**: options to pass. Only valid value at this time `type`. `type` can be
+either `Array`, `Uint8Array`, or `Buffer`. `Buffer` is only valid in Node.js or 
+[Browserify](https://github.com/substack/node-browserify) environments - it will throw an error otherwise.
 
-Returns a `Uint8Array` or `Array` if `options.array` is set.
+
 
 ```js
-var bytes = secureRandom(10)
+var bytes = secureRandom(10) //return an Array of 10 bytes
 console.log(bytes.length) //10
 ```
 
@@ -64,11 +66,12 @@ References
 * [window.crypto.getRandomValues()](https://developer.mozilla.org/en-US/docs/Web/API/window.crypto.getRandomValues)
 * [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 
+
 License
 -------
 
 (MIT License)
 
-Copyright 2013, JP Richardson
+Copyright 2013-2014, JP Richardson
 
 
