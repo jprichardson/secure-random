@@ -52,7 +52,14 @@ describe('secure-random', function() {
       var data = secureRandom.randomArray(10)
       T (data instanceof Array)
       EQ (data.length, 10)
+    })
+  })
 
+  describe('randomUint8Array(byteCount)', function() {
+    it('should return an Uint8Array', function() {
+      var data = secureRandom.randomUint8Array(10)
+      T (data instanceof Uint8Array)
+      EQ (data.length, 10)
     })
   })
 })

@@ -81,11 +81,20 @@ console.log(bytes.length) //10
 
 ### randomArray(byteLength)
 
-Sugar for `secureRandom(byteLenght, {type: 'Array'})`.
+Sugar for `secureRandom(byteLength, {type: 'Array'})`.
 
 ```js
 var secureRandom = require('secure-random')
 var data = secureRandom.randomArray(10)
+```
+
+### randomUint8Array(byteLength)
+
+Sugar for `secureRandom(byteLength, {type: 'Uint8Array'})`.
+
+```js
+var secureRandom = require('secure-random')
+var data = secureRandom.randomUint8Array(10)
 ```
 
 

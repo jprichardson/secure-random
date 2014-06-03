@@ -20,6 +20,7 @@ var data = secureRandom(10) //returns Array by default
 * added `Buffer` type
 * added `randomArray()` method
 
+
 0.2.1 / 2014-03-20
 ------------------
 * removed browserify hack, replaced with `package.json` setting. [weilu / #1](https://github.com/jprichardson/secure-random/pull/1)
