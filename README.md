@@ -43,20 +43,50 @@ Install
 Usage
 -----
 
-### secureRandom(count, options)
+### secureRandom(byteCount, options)
 
-- **countBytes**: is the number of bytes to return. 
+- **byteCount**: is the number of bytes to return. 
 - **options**: options to pass. Only valid value at this time `type`. `type` can be
 either `Array`, `Uint8Array`, or `Buffer`. `Buffer` is only valid in Node.js or 
 [Browserify](https://github.com/substack/node-browserify) environments - it will throw an error otherwise.
 
 
+return an `Array`:
 
 ```js
 var bytes = secureRandom(10) //return an Array of 10 bytes
 console.log(bytes.length) //10
 ```
 
+or:
+
+```js
+var bytes = secureRandom(10, {type: 'Array'}) //return an Array of 10 bytes
+console.log(bytes.length) //10
+```
+
+return a `Buffer`:
+
+```js
+var bytes = secureRandom(10, {type: 'Buffer'}) //return a Buffer of 10 bytes
+console.log(bytes.length) //10
+```
+
+return a `Uint8Array`:
+
+```js
+var bytes = secureRandom(10, {type: 'Uint8Array'}) //return a Uint8Array of 10 bytes
+console.log(bytes.length) //10
+```
+
+### randomArray(byteLength)
+
+Sugar for `secureRandom(byteLenght, {type: 'Array'})`.
+
+```js
+var secureRandom = require('secure-random')
+var data = secureRandom.randomArray(10)
+```
 
 
 References

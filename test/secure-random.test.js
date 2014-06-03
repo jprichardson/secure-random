@@ -46,4 +46,13 @@ describe('secure-random', function() {
       })
     })    
   })
+
+  describe('randomArray(byteCount)', function() {
+    it('should return an Array', function() {
+      var data = secureRandom.randomArray(10)
+      T (data instanceof Array)
+      EQ (data.length, 10)
+
+    })
+  })
 })
