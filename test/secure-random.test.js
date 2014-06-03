@@ -37,5 +37,13 @@ describe('secure-random', function() {
         EQ (data.length, 10)
       })
     })
+
+    describe('> when type is not supported', function() {
+      it('should throw an error', function() {
+        THROWS (function() {
+          var data = secureRandom(10, {type: 'superArray'})
+        })
+      })
+    })    
   })
 })
