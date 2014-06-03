@@ -11,7 +11,7 @@ A simple JavaScript component to normalize the creation of cryptographically str
 Why?
 ----
 
-Context switching between the browser and Node.js and creating cryptographically secure random numbers is annoying. This normalizes the behavior. Used by [cryptocoinjs](https://github.com/cryptocoinjs)
+Context switching between the browser and Node.js and creating cryptographically secure random numbers is annoying. This normalizes the behavior. Used by [CryptoCoinJS](http://cryptocoinjs.com) and [BitcoinJS](https://github.com/bitcoinjs/bitcoinjs-lib).
 
 
 
