@@ -79,27 +79,27 @@ var bytes = secureRandom(10, {type: 'Uint8Array'}) //return a Uint8Array of 10 b
 console.log(bytes.length) //10
 ```
 
-### randomArray(byteLength)
+### randomArray(byteCount)
 
-Sugar for `secureRandom(byteLength, {type: 'Array'})`.
+Sugar for `secureRandom(byteCount, {type: 'Array'})`.
 
 ```js
 var secureRandom = require('secure-random')
 var data = secureRandom.randomArray(10)
 ```
 
-### randomUint8Array(byteLength)
+### randomUint8Array(byteCount)
 
-Sugar for `secureRandom(byteLength, {type: 'Uint8Array'})`.
+Sugar for `secureRandom(byteCount, {type: 'Uint8Array'})`.
 
 ```js
 var secureRandom = require('secure-random')
 var data = secureRandom.randomUint8Array(10)
 ```
 
-### randomBuffer(byteLength)
+### randomBuffer(byteCount)
 
-Sugar for `secureRandom(byteLength, {type: 'Buffer'})`.
+Sugar for `secureRandom(byteCount, {type: 'Buffer'})`.
 
 ```js
 var secureRandom = require('secure-random')
