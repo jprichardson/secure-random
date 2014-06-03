@@ -17,7 +17,8 @@ new way:
 var data = secureRandom(10) //returns Array by default
 ```
 
-
+* added `Buffer` type
+* 
 
 0.2.1 / 2014-03-20
 ------------------

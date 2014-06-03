@@ -21,5 +21,21 @@ describe('secure-random', function() {
         EQ (data.length, 10)
       })
     })
+
+    describe('> when type is set to Buffer', function() {
+      it('should return an Buffer of random bytes', function() {
+        var data = secureRandom(10, {type: 'Buffer'})
+        T (Buffer.isBuffer(data))
+        EQ (data.length, 10)
+      })
+    })
+
+    describe('> when type is set to Uint8Array', function() {
+      it('should return an Uint8Array of random bytes', function() {
+        var data = secureRandom(10, {type: 'Uint8Array'})
+        T (data instanceof Uint8Array)
+        EQ (data.length, 10)
+      })
+    })
   })
 })
