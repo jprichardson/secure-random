@@ -1,3 +1,7 @@
+1.1.0 / 2014-06-30
+------------------
+* added support for `window.msCrypto` for Internet Explorer
+
 1.0.0 / 2014-06-03
 ------------------
 * added Travis-CI support
