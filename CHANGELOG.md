@@ -1,3 +1,7 @@
+1.1.1 / 2014-06-30
+------------------
+* bugfix: `1.1.0` only checked for support, didn't actually add, this bugfix actually adds it
+
 1.1.0 / 2014-06-30
 ------------------
 * added support for `window.msCrypto` for Internet Explorer
