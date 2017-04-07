@@ -106,6 +106,14 @@ var secureRandom = require('secure-random')
 var data = secureRandom.randomBuffer(10)
 ```
 
+Handling Errors
+-----
+
+An error will be thrown if a secure random number generator is not available.
+
+```javascript
+throw new Error("Your browser does not support window.crypto.")
+```
 
 References
 ----------
