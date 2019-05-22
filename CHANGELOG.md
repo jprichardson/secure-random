@@ -1,3 +1,7 @@
+1.1.2 / 2019-05-22
+------------------
+* make compatible for vue-cli
+
 1.1.1 / 2014-06-30
 ------------------
 * bugfix: `1.1.0` only checked for support of `window.msCrypto`, didn't actually add, this bugfix actually adds it
